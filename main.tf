@@ -15,10 +15,10 @@ provider "azurerm" {
 resource "random_uuid" "id" {
 }
 
-#resource "azurerm_resource_group" "test" {
-#  name     = "${random_uuid.id.result}-rg"
-#  location = "East US2"
-#  tags = {
-#    "sample" = var.tag_name
-#  }
-#}
+resource "azurerm_resource_group" "test" {
+  name     = "${random_uuid.id.result}-rg"
+  location = "East US2"
+  tags = {
+    "sample" = var.tag_name
+  }
+}
