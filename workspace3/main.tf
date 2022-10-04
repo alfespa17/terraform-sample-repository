@@ -13,7 +13,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "example" {
   name     = "api-rg-pro"
-  location = "West Europe"
+  location = "East Us 2"
 }
 
 resource "azurerm_app_service_plan" "example" {
