@@ -22,7 +22,7 @@ resource "azurerm_app_service_plan" "example" {
   resource_group_name = azurerm_resource_group.example.name
 
   sku {
-    tier = "Standard"
-    size = "S1"
+    tier = "Basic"
+    size = "B1"
   }
 }
